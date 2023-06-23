@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React from 'react';
 import { movies } from './Home';
 import { useParams } from 'react-router-dom';
 
@@ -7,7 +7,7 @@ export default function Booking() {
 
     // const [isSelected, setIsSelected] = useState(false);
     const handleSeat = (e) => {
-        const {className, value} = e.target;
+        const {value} = e.target;
         console.log(value)
         e.target.classList.toggle('selected')
     }
@@ -25,7 +25,7 @@ export default function Booking() {
             <div className="col-lg-7 row justify-content-center d-flex py-5"> {/* Left Side */}
 
                 <div className="col-lg-12">
-                    <iframe width="100%" height="500px" src={movie.trailer} frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> {/* Video Source */}
+                    <iframe title='trailer' width="100%" height="500px" src={movie.trailer} frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe> {/* Video Source */}
                 </div>
                 <div className="col-lg-12 row py-3">
                     <div className="col-lg-5">
