@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import apiService from '../../Api-service/ApiService';
-import Register from '../Register';
+import Register from '../../components/Register';
 import React, { useState } from 'react';
 import { Toast } from 'react-bootstrap';
 
@@ -84,7 +84,7 @@ function LoginForm() {
                                 <div className="container-fluid py-2">
                                     <button className="w-100 btn btn-lg btn-danger" type="submit">Log in</button>                                    
                                     {/* <button className="w-100 btn btn-lg btn-danger" onClick={handleRegClick}>Create an Account</button> */}
-                                </div>                    
+                                </div>                 
                                 </form>
                             </main>
                         </div>
